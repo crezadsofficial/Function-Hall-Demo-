@@ -65,12 +65,14 @@
     <section id="gallery" class="section dark-section">
         <h2 class="section-title">Gallery</h2>
         <div class="gallery-grid">
-            <div class="gallery-item" style="background-image: url('entrance.png');"></div>
-            <div class="gallery-item" style="background-image: url('seating1.jpg');"></div>
-            <div class="gallery-item" style="background-image: url('seating2.webp');"></div>
-            <div class="gallery-item" style="background-image: url('decor1.jpg');"></div>
-            <div class="gallery-item" style="background-image: url('decor2.jpg');"></div>
-        </div>
+
+    <img src="entrance.png" class="gallery-img" onclick="openImage(this.src)">
+    <img src="seating1.jpg" class="gallery-img" onclick="openImage(this.src)">
+    <img src="seating2.webp" class="gallery-img" onclick="openImage(this.src)">
+    <img src="decor1.jpg" class="gallery-img" onclick="openImage(this.src)">
+    <img src="decor2.jpg" class="gallery-img" onclick="openImage(this.src)">
+
+</div>
     </section>
 
     <!-- Facilities Section -->
@@ -218,5 +220,19 @@
     </a>
 
     <script src="script.js"></script>
+       <script>
+function openImage(src) {
+    document.getElementById("imagePopup").style.display = "flex";
+    document.getElementById("popupImg").src = src;
+}
+
+function closeImage() {
+    document.getElementById("imagePopup").style.display = "none";
+}
+</script>
+        
+        <div id="imagePopup" class="image-popup" onclick="closeImage()">
+    <img id="popupImg">
+</div>
 </body>
 </html>
