@@ -107,7 +107,7 @@ section {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), 
-                url('https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+                url('entrance.png') center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
