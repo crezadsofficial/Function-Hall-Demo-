@@ -388,3 +388,58 @@ section {
 .event-card * {
     color: white !important;
 }
+/* ===== MOBILE RESPONSIVE ===== */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        background: #0f0f0f;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        padding: 20px 0;
+        transition: 0.3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    /* Hero */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* About */
+    .about-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    /* Gallery */
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Features & Events */
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Section spacing */
+    section {
+        padding: 60px 15px;
+    }
+}
