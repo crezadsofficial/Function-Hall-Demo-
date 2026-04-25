@@ -229,6 +229,13 @@ function openImage(src) {
 function closeImage() {
     document.getElementById("imagePopup").style.display = "none";
 }
+ <script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+}         
 </script>
         
         <div id="imagePopup" class="image-popup" onclick="closeImage()">
