@@ -370,21 +370,7 @@ section {
     font-size: 40px;
     color: var(--gold-accent);
     margin-bottom: 15px;
-}
-/* FIX: Events section text visible */
-.dark-section .feature-card {
-    background: white;
-    color: black;
-}
 
-.dark-section .feature-card h3,
-.dark-section .feature-card p {
-    color: black;
-}
-.dark-section .feature-card {
-    background: #1c1c1c;
-    color: white;
-    border: 1px solid rgba(255,255,255,0.1);
 }
 /* FIX: Event section text visible */
 .event-card h3,
@@ -398,4 +384,7 @@ section {
 
 .event-card:hover {
     background: rgba(212,175,55,0.1);
+}
+.event-card * {
+    color: white !important;
 }
