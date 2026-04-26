@@ -219,8 +219,12 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <script src="script.js"></script>
-       <script>
+    <!-- IMAGE POPUP -->
+<div id="imagePopup" class="image-popup" onclick="closeImage()">
+    <img id="popupImg">
+</div>
+
+<script>
 function openImage(src) {
     document.getElementById("imagePopup").style.display = "flex";
     document.getElementById("popupImg").src = src;
@@ -229,17 +233,16 @@ function openImage(src) {
 function closeImage() {
     document.getElementById("imagePopup").style.display = "none";
 }
- <script>
+
+// MOBILE MENU
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
 hamburger.addEventListener("click", () => {
     navMenu.classList.toggle("active");
-});         
+});
 </script>
-        
-        <div id="imagePopup" class="image-popup" onclick="closeImage()">
-    <img id="popupImg">
+    
 </div>
 </body>
 </html>
