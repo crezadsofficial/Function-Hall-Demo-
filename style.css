@@ -256,7 +256,7 @@ section {
     margin: 0 auto;
     padding: 0 2rem;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
 }
 
@@ -441,5 +441,43 @@ section {
     /* Section spacing */
     section {
         padding: 60px 15px;
+    }
+} 
+/* ===== EXTRA MOBILE FIX ===== */
+@media (max-width: 768px) {
+
+    /* Navbar fix */
+    .nav-container {
+        padding: 0 15px;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    /* Hero spacing */
+    .hero {
+        height: auto;
+        padding: 120px 15px 80px;
+    }
+
+    /* About image */
+    .about-image {
+        height: 250px;
+    }
+
+    /* Cards spacing */
+    .feature-card {
+        width: 100%;
+    }
+
+    /* Gallery image size */
+    .gallery-img {
+        height: 220px;
+    }
+
+    /* Section title */
+    .section-title {
+        font-size: 2rem;
     }
 }
